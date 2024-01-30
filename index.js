@@ -59,9 +59,10 @@ inquirer
     // user feedback to generate readme
     // .then takes (answers) as arguments to use an reference in markdown gen 
     const readmeContent = generateMarkdown(answers);
+
     // function to write README file
     // fs.writeFile( file, data, options, callback )
-    fs.writeFile('README.md', readmeContent, 'utf8', (err) => {
+    fs.writeFile('/README.md', readmeContent, 'utf8', (err) => {
       if (err) {
         console.error('Error', err);
       } else {
