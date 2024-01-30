@@ -53,11 +53,12 @@ inquirer
     name: 'email',
     message: 'Enter Email address:'
   }
+
 ])
 .then((answers) => {
     // user feedback to generate readme
-    const readmeContent = generateREADME(answers);
-
+    // .then takes (answers) as arguments to use an reference in markdown gen 
+    const readmeContent = generateMarkdown(answers);
     // function to write README file
     // fs.writeFile( file, data, options, callback )
     fs.writeFile('README.md', readmeContent, 'utf8', (err) => {
