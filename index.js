@@ -3,6 +3,8 @@ const path = require('path');
 const inquirer = require("inquirer");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+
+
 // array of questions for user
 inquirer
 .prompt([
@@ -62,7 +64,7 @@ inquirer
 
     // function to write README file
     // fs.writeFile( file, data, options, callback )
-    fs.writeFile('/README.md', readmeContent, 'utf8', (err) => {
+    fs.writeFile('README.md', readmeContent, 'utf8', (err) => {
       if (err) {
         console.error('Error', err);
       } else {
