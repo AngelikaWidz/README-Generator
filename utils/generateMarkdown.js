@@ -9,7 +9,6 @@ function generateMarkdown(answers) {
   - [Usage](#usage)
   - [License](#license)
   - [Contributing](#contributing)
-  - [Tests](#tests)
   - [Questions](#questions)
   
   ## Description
@@ -28,9 +27,6 @@ function generateMarkdown(answers) {
   
   ## Contributing
   ${answers.contributing}
-  
-  ## Tests
-  ${answers.tests}
   
   ## Questions
   If you have any questions, feel free to reach out to me:
