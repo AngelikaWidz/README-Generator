@@ -75,11 +75,3 @@ inquirer
   .catch((err) => {
     console.error('Error:', err);
   });
-
-// function to initialize program
-function init() {
-
-}
-
-// function call to initialize program
-init();
